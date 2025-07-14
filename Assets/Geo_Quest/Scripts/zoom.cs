@@ -18,7 +18,7 @@ public class zoom : MonoBehaviour
     void Update()
     {
         float xInput = Input.GetAxis("Horizontal");
-        rb.velocity = new Vector2(xInput * speed, rb.velocity.x);
+        rb.velocity = new Vector2(xInput * speed, rb.velocity.y);
     }
 
 
