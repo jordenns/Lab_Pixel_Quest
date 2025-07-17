@@ -216,7 +216,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8656293346869299408, guid: 58119e95f641c3141ada1da605a5d54d, type: 3}
       propertyPath: m_text
-      value: 'A/D to move '
+      value: "A/D to move \n123 to change color"
       objectReference: {fileID: 0}
     - target: {fileID: 8656293346869299408, guid: 58119e95f641c3141ada1da605a5d54d, type: 3}
       propertyPath: m_margin.z
@@ -291,24 +291,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c2aadd6182eea8446b68b997047561f2, type: 3}
---- !u!1 &643735843 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2736020261537854571, guid: 1fe8e79a874b16641be6322f52bc8612, type: 3}
-  m_PrefabInstance: {fileID: 1045665200}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &643735844
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 643735843}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 45ba51b75d42bef4cb25bcdb9fd564e4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nextLevel: scene 2
 --- !u!1001 &742704591
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -616,18 +598,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: tilemap_packed 1_97
       objectReference: {fileID: 0}
-    - target: {fileID: 2736020261537854571, guid: 1fe8e79a874b16641be6322f52bc8612, type: 3}
-      propertyPath: m_TagString
-      value: Untagged
-      objectReference: {fileID: 0}
-    - target: {fileID: 7579733488966949885, guid: 1fe8e79a874b16641be6322f52bc8612, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1.0316819
-      objectReference: {fileID: 0}
-    - target: {fileID: 7579733488966949885, guid: 1fe8e79a874b16641be6322f52bc8612, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.8005119
-      objectReference: {fileID: 0}
     - target: {fileID: 7579733488966949885, guid: 1fe8e79a874b16641be6322f52bc8612, type: 3}
       propertyPath: m_LocalPosition.x
       value: -7.1839
@@ -671,10 +641,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 2736020261537854571, guid: 1fe8e79a874b16641be6322f52bc8612, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 643735844}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1fe8e79a874b16641be6322f52bc8612, type: 3}
 --- !u!1 &1161909934
 GameObject:
