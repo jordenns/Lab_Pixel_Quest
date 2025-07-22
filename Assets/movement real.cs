@@ -18,6 +18,7 @@ public class PlayerController : MonoBehaviour
         {
             rb.AddForce(new Vector2(0, jumpForce), ForceMode2D.Impulse);
         }
+      
     }
 
     // Detect if the sprite is on the ground
