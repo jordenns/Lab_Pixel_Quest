@@ -8,6 +8,7 @@ public class PlayerStats : MonoBehaviour
 {
     public string nextLevel = "Geo_Quest_Scene_2";
     private int coinCounter = 0;
+    private int coinsInLevel= 0;
     public int playerHealth = 3;
     public int maxHealth = 3;
     public Transform RespawnPoint;
@@ -16,8 +17,12 @@ public class PlayerStats : MonoBehaviour
 
     private void Start()
     {
+        coinsInLevel = GameObject.Find("Coins").transform.childCount;
         _playerUIController = GetComponent<PlayerUiController>();
+        _playerUIController.StartUI();
         _playerUIController.UpdateHealth(playerHealth, maxHealth);
+
+        _playerUIController.UpdateCoin(coinCounter + "/" + coinsInLevel);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -42,6 +47,7 @@ public class PlayerStats : MonoBehaviour
             case "Coin":
                 {
                     coinCounter++;
+                    _playerUIController.UpdateCoin(coinCounter + "/" + coinsInLevel);
                     Destroy(collision.gameObject);
                     break;
                 }
